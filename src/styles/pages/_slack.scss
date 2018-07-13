@@ -1,0 +1,54 @@
+.slack-key {
+  min-height: 54vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .slack-top {
+    position: relative;
+    padding: 3em 0;
+    display: flex;
+    flex-direction: row;
+
+    input {
+      width: 200px;
+      border-radius: 5px;
+      border: 1px solid color-list("borders");
+      outline: none;
+      background-color: color-list("text-light");
+      color: color-list("text-dark");
+      font-size: 14px;
+      text-indent: 5px;
+      line-height: 30px;
+    }
+
+    .copyBtn {
+      margin-left: 2em;
+      padding-left: 2em;
+      padding-right: 2em;
+      border-radius: 5px;
+      border: 1px solid color-list("primary");
+      outline: none;
+      background-color: color-list("primary");
+      color: color-list("text-light");
+      line-height: 30px;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .copied-success {
+      position: absolute;
+      left: 40%;
+      bottom: 0;
+    }
+  }
+
+  .slack-instructions {
+    padding: 3em 0;
+  }
+
+  .slack-example {
+    padding: 3em 0;
+  }
+}

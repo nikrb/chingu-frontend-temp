@@ -1,0 +1,47 @@
+.submitBtn {
+  width: 100%;
+  margin: 1em 0 0.5em 0;
+  padding: 0.5em;
+  line-height: 20px;
+  background-color: #15df89;
+  color: color-list("text-light");
+  text-transform: uppercase;
+  font-size: 18px;
+  border: none;
+}
+
+.dash-btn {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  color: color-list("accent");
+  font-weight: 700;
+}
+
+.modal-btn {
+  background: transparent;
+  border: 3px solid color-list("accent");
+  color: color-list("accent");
+  font-weight: 700;
+  padding: 0.4em 0.6em;
+
+  &.red {
+    background: red;
+    border: 3px solid red;
+    color: color-list("text-light");
+  }
+}
+
+.footer-btn {
+  width: 100%;
+  background-color: color-list("primary");
+  border: 1px solid color-list("accent");
+  color: color-list("accent");
+  font-size: 24px;
+  font-weight: 700;
+  @include hocus {
+    background-color: color-list("accent");
+    color: color-list("text-light");
+  }
+}
