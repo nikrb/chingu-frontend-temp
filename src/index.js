@@ -19,9 +19,9 @@ import registerServiceWorker from "./registerServiceWorker";
 
 let API_URI;
 if (window.location.host.indexOf("chingu-staging") > -1 || window.location.host.indexOf("localhost") > -1) {
-  API_URI = "https://chingu-dev-backend.glitch.me/graphql";
+  API_URI = "http://localhost:3000/graphql";
 } else {
-  API_URI = "https://chingu-api.herokuapp.com/graphql";
+  API_URI = "https://chingu-dev-backend.glitch.me/graphql";
 }
 
 console.log('using graphql link:', API_URI);
