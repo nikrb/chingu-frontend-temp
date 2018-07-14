@@ -1,7 +1,6 @@
 {
   "name": "chingu-frontend",
   "version": "0.1.0",
-  "proxy": "http://localhost:3001",
   "private": true,
   "dependencies": {
     "apollo-cache-inmemory": "^1.1.7",
@@ -22,12 +21,14 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.0",
     "redux": "^3.7.2",
-    "redux-form": "^7.2.3"
+    "redux-form": "^7.2.3",
+    "serve": "^9.2.0"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/styles -o src/styles",
     "watch-css": "npm run build-css && node-sass-chokidar src/styles -o src/styles --watch --recursive",
-    "start": "react-scripts start",
+    "start": "serve -s build",
+    "start-dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
