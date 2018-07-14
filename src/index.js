@@ -19,12 +19,15 @@ import registerServiceWorker from "./registerServiceWorker";
 
 let API_URI;
 if (window.location.host.indexOf("chingu-staging") > -1 || window.location.host.indexOf("localhost") > -1) {
-  API_URI = "http://localhost:3000/graphql";
+  API_URI = "https://chingu-dev-backend.glitch.me/graphql";
 } else {
   API_URI = "https://chingu-api.herokuapp.com/graphql";
 }
 
 console.log('using graphql link:', API_URI);
+localStorage.setItem('token', 'Bearer somelongjwttoken');
+localStorage.setItem('user_id', '5b4936e9a14eb601d910dde6');
+localStorage.setItem('username', 'nikrb');
 
 const httpLink = createHttpLink({ uri: API_URI });
 
